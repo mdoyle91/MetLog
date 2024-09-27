@@ -29,7 +29,7 @@ After a long day of perusing art in the museum, and you and your friend decide t
 ### Credits
 - I'll be using the Met API to create this app, which has four endpoints of Objects, Object, Departments, Search. (https://metmuseum.github.io/)
 - (Possibly using Google translate if I can figure out how to run text through and return it.) https://translate.google.com/?sl=en&tl=fr&op=translate
-  -Explanation of how to integrate Google translate feature into JavaScipt https://www.w3schools.com/howto/howto_google_translate.asp 
+- Explanation of how to integrate Google translate feature into JavaScipt https://www.w3schools.com/howto/howto_google_translate.asp 
 
 
 
