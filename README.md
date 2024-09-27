@@ -23,7 +23,7 @@ After a long day of perusing art in the museum, and you and your friend decide t
 
 
 ## Wireframe
-![MetLog_Wireframe_MainScreen](https://github.com/user-attachments/assets/f09ccfe4-1741-436a-b04f-0bc91cbf4572)
+![MetLog_Wireframe_MainScreen](https://github.com/user-attachments/assets/04d851b3-b375-4436-b5c4-35dda9ed6bf9)
 
 
 ### Credits
