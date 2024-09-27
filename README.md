@@ -11,8 +11,8 @@ You're visiting the Metropolitan Museum of Art with a friend who lives in NYC. S
 After a long day of perusing art in the museum, and you and your friend decide to cut through Central Park to reach her Upper West Side apartment when suddenly a massive flock of pidgeons with upset stomachs flies over the two of you, relieving themselves simultaneously and drenching the two of you and your phones which are now kaput! Now that you've returned to your friend's apartment and each of you have washed the earlier mess off yourselves, you're reminscing about your art-filled day. You're remembering a particular painting you saw and its title, but you can't recall who created it. Your phone is still broken, so you can't look it up there. You decide to use your friend's laptop, but oddly enough the Met website is down, and a Google search isn't yielding any results when you type in the title. However, you think to open the MetLog app on the computer to see if it works, but notice that it looks slightly different on a desktop display.
 
 ## How to Get Started
-- Step 1: Create the HTML with tags that correspond to the app wireframe.
-- Step 2: Write asynchronous call functions in Javascript and console.log them to ensure that desired data will populate.
+- Step 1:  Write asynchronous call functions in Javascript and console.log them to ensure that desired data will populate. 
+- Step 2: Create the HTML with tags that correspond to the app wireframe.
 - Step 3: Add corresponding EventListeners to the Javascript and test them.
 - Step 4: Style the CSS for the mobile app.
 - Step 5: Style the CSS for the desktop version.
