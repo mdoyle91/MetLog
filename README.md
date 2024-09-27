@@ -1,6 +1,6 @@
 # MetLog
 
-You're visiting the Metropolitan Museum of Art with a friend who lives in NYC. She gets you both into the museum for a total of $1 (not each, for both) using her NY state ID and the pay-what-you-want privileges afforded to residents of the state. The disgruntled employee collecting admission fees glowers at the pair of you with such intensity that you almost feel as if you've cheated him of wages by contributing so little. As your friend is reminding you and herself that the cashier's disdain germinates from his few dollars an hour more than the minimum wage hourly pay and the insurmontable burden of student debt he acquired along with his BA in art history and that this is a multi-million dollar 501(c)3 that could afford to pay him more regardless of the admission fees it charges the public, the thought hits you that you would like descriptions of the art you're seeing. You saunter back over to the cashier, interjecting your question about audioguides as the flurry of other patrons continue to pour into the museums. When he tells you that they're available for $20 an audioguide, your friend promptly states, "No, thank you. We'll look things up online," to the cashier in order to save face for the $1 she paid for your joint admission to the museum. 
+You're visiting the Metropolitan Museum of Art with a friend who lives in NYC. She gets you both into the museum for a total of $1 (not each, for both) using her NY state ID and the pay-what-you-want privileges afforded to residents of the state. The disgruntled employee collecting admission fees glowers at the pair of you with such intensity that you almost feel as if you've cheated him of wages by contributing so little. As your friend is reminding you and herself that the cashier's disdain germinates from his few dollars an hour more than the minimum wage hourly pay and the insurmontable burden of student debt he acquired along with his BA in art history and that this is a multi-million dollar 501(c)3 could afford to pay him more regardless of the admission fees it charges the public, the thought hits you that you would like descriptions of the art you're seeing. You saunter back over to the cashier, interjecting your question about audioguides as the flurry of other patrons continue to pour into the museum. When he tells you that they're available for $20 an audioguide, your friend promptly states, "No, thank you. We'll look things up online," to the cashier in order to save face for the $1 she paid for your joint admission to the museum. 
 
 "You have to pay for the Wifi, and you won't be able to get service inside the museum," says the cashier smugly. "However, you will still be able to use MetLog on the Wifi without paying," he adds as a smirk brightens up his cheeks.
 
@@ -8,18 +8,25 @@ You're visiting the Metropolitan Museum of Art with a friend who lives in NYC. S
 
 (Optional if I can figure out how to do it: But wait! In all of the chaos of the admissions fiasco, you've forgotten that you're a native French speaker with limited English. Perhaps it was the hangover from the many bottles of wine you consumed with your friend, perfuming yourselves in the late evening hours with each successive drag of your cigarettes--but yes, in fact you are not American in the least and will need to have all of the descriptions on the app translated into French. Fortunately, you see a drop down menu in the upper right corner of the app with an "EN," which you click and change to "FR." Sweet victory! You'll have all of the information that you need in French while those pesky marketing emails pile up in the promotions tab of your gmail in a language you don't fully understand.) 
 
+After a long day of perusing art in the museum, and you and your friend decide to cut through Central Park to reach her Upper West Side apartment when suddenly a massive flock of pidgeons with upset stomachs flies over the two of you, relieving themselves simultaneously and drenching the two of you and your phones which are now kaput! Now that you've returned to your friend's apartment and each of you have washed the earlier mess off yourselves, you're reminscing about your art-filled day. You're remembering a particular painting you saw and its title, but you can't recall who created it. Your phone is still broken, so you can't look it up there. You decide to use your friend's laptop, but oddly enough the Met website is down, and a Google search isn't yielding any results when you type in the title. However, you think to open the MetLog app on the computer to see if it works, but notice that it looks slightly different on a desktop display.
+
 ## How to Get Started
-- Steps...
--  Step 2
+- Step 1: Create the HTML with tags that correspond to the app wireframe.
+- Step 2: Write asynchronous call functions in Javascript and console.log them to ensure that desired data will populate.
+- Step 3: Add corresponding EventListeners to the Javascript and test them.
+- Step 4: Style the CSS for the mobile app.
+- Step 5: Style the CSS for the desktop version.
+- (Step 6: Optional): Add the translation feature. 
+
 
 
 ## Wireframe
 ![description of image](image.png)
 
 ### Credits
-- Link
-- Link
-- Link
+- I'll be using the Met API to create this app, which has four endpoints of Objects, Object, Departments, Search. (https://metmuseum.github.io/)
+- (Possibly using Google translate if I can figure out how to run text through and return it.) https://translate.google.com/?sl=en&tl=fr&op=translate
+
 
 
 Your game must be approved by the instructors before you start
