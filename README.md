@@ -16,12 +16,15 @@ After a long day of perusing art in the museum, and you and your friend decide t
 - Step 3: Add corresponding EventListeners to the Javascript and test them.
 - Step 4: Style the CSS for the mobile app.
 - Step 5: Style the CSS for the desktop version.
-- (Step 6: Optional): Add the translation feature. 
+- Step 6: Time permitting create entry page for app & desktop, whiteboard, wireframe, and pseudo-code prior.
+- (Step 7: Optional): Add the translation feature.
+- (Step 8: Optional): Figure out pop-ups for new user navigation. 
 
 
 
 ## Wireframe
-![description of image](image.png)
+!![MetLog_Wireframe_MainScreen](https://github.com/user-attachments/assets/f09ccfe4-1741-436a-b04f-0bc91cbf4572)
+
 
 ### Credits
 - I'll be using the Met API to create this app, which has four endpoints of Objects, Object, Departments, Search. (https://metmuseum.github.io/)
