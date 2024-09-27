@@ -1,6 +1,6 @@
-# Weather API
+# MetLog
 
-This is my description
+You're visiting the Metropolitan Museum of Art with a friend who lives in NYC. They get you both into the museum for a total of $1 (not each, for both) using their NY state ID and the pay-what-you-want privileges afforded to residents of the state. The disgruntled employee collecting admission fees glowers at the pair of you with such intensity that you almost feel as if you've cheated him of wages by contributing so little. As you're reminding yourself that cashier's disdain germinates from his few dollars an hour more than the minimum wage hourly pay and the insurmontable burden of student debt he acquired along with his BA in art history and that this is a multiple million dollar 501(c)3 that could afford to pay him more regardless of the admission fees it charges the public, the thought hits you that perhaps your friend would like descriptions of the art you're seeing. You saunter back over to the cashier, interjecting your question about audioguides as the flurry of other patrons continue to pour into the museums. When he tells you that they're available
 
 ## How to Get Started
 - Steps...
