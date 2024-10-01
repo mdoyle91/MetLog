@@ -42,6 +42,8 @@ You may not use the JS Canvas Library unless you can demonstrate a clear underst
 
 Pseudo-coding
 -Write asynochronous call functions in Javascript to ensure you'll be ableto get all applicable data
+    -Need code that will get data requested by ObjectID
+    -Allow for multiple search criteria
 -Create corresponding HTML tags that match the wireframe
 -Add EventListeners to the Javascript
 -Style the CSS for mobile/desktop versions
