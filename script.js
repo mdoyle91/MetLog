@@ -18,6 +18,12 @@ const copyright= document.querySelector(`#rightsAndReproduction`)
 const site= document.querySelector(`#linkResource`)
 const objectTags= document.querySelector(`#tags`)
 const objectGalleryNumber = document.querySelector(`#GalleryNumber`)
+const img1 = document.querySelector(`#img1`)
+const img2 = document.querySelector(`#img2`)
+const img3 = document.querySelector(`#img3`)
+const img4 = document.querySelector(`#img4`)
+const img5 = document.querySelector(`#img5`)
+const img6 = document.querySelector(`#img6`)
 
 
 searchButton.addEventListener(`click`, async ()=> { //For DRY code, may want to separate click event listener from overall function if necessary
@@ -27,7 +33,7 @@ searchButton.addEventListener(`click`, async ()=> { //For DRY code, may want to 
         https://collectionapi.metmuseum.org/public/collection/v1/objects/${searchText}`)
     let objectImage = response.data.primaryImage
     imgContainer.setAttribute("src", objectImage)
-    let {objectID, accessionYear, department, objectName, title, culture, artistDisplayName, atristDisplayBio, objectDate, medium, dimensions, creditLine, rightsAndReproduction, linkResource, tags, GalleryNumber} = response.data
+    let {objectID, accessionYear, department, objectName, title, culture, artistDisplayName, atristDisplayBio, objectDate, medium, dimensions, creditLine, rightsAndReproduction, objectURL, tags, GalleryNumber} = response.data
     id.textContent = `Object ID: ${objectID}`
     yearAcquired.textContent = `Year Acquired: ${accessionYear}`
     objectDepartment.textContent = `Department: ${department}`
@@ -41,11 +47,33 @@ searchButton.addEventListener(`click`, async ()=> { //For DRY code, may want to 
     objectDimensions.textContent = `Dimensions: ${dimensions}`
     source.textContent = `Source of Artwork: ${creditLine}`
     copyright.textContent = `Copyright: ${rightsAndReproduction}`
-    site.textContent = `Site Info: ${linkResource}`
+    site.textContent = `Site Info: ${objectURL}`
     objectTags.textContent = `Tags: ${tags}`
     objectGalleryNumber.textContent = `Gallery Number: ${GalleryNumber}`
 })
 
 
-
-
+searchButton.addEventListener(`click`, async ()=> {
+    let searchText= textInput.value
+        console.log(searchText)
+        let response = await axios.get(`
+            https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&q=${searchText}`)
+        console.log (response)
+        let objectIDs = response.data.objectIDs
+        let firstSixIDs= []
+        if (objectIDs && objectIDs.length > 0)    {   //Used ChatGPT to test how to get the if and for lines
+            for (let i=0; i < Math.min(6, objectIDs.length); i++){
+                firstSixIDs.push(objectIDs[i])
+                console.log(firstSixIDs)
+            }
+        } 
+            let imagePromises = firstSixIDs.map(id =>{       //Used ChatGPT here, which suggested the map and promise.all as I tried a different approach first that didn't work.
+                return axios.get(`https://collectionapi.metmuseum.org/public/collection/v1/objects/${id}`)
+            })
+            let imageResponses = await Promise.all(imagePromises)
+            imageResponses.forEach((imgResponse, index) => {
+                if (imageResponses.data && imageResponses.data.primaryImage){
+                    document.getElementById(`img${index+1}`).setAttribute("src", imgResponse.data.primaryImage)
+                }
+            })
+        })
