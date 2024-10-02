@@ -17,7 +17,17 @@ body {
     margin: auto;
 }
 
-.container {
+.container1 {
+    display: flex;
+    align-items: center; 
+    justify-content: space-between;
+    margin: 20px 0;
+    background: rgba(18, 17, 18, 0.4);
+    height: 60px;
+    padding: 0 20px;
+}
+
+.container2 {
     display: flex; 
     flex-wrap: wrap; 
     justify-content: space-between;
@@ -26,5 +36,22 @@ body {
 }
 
 #headerImg{
-    max-width: 300px;
+    max-width: 300px; //Maybe need to change this to make it more responsive
+}
+
+.con1_column1 {
+    display: flex;
+    gap: 20px; 
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.con1_column2 {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 60px;
+    background: black;
+    color: white;
+    padding: 0 20px; 
 }
