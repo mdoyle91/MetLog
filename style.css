@@ -1,3 +1,12 @@
+
+header{
+    display: flex;
+    background: rgb(235, 0, 41); //Used this website to match the exact color of the logo to the header background https://www.geeksforgeeks.org/image-color-picker/
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
 body {
     font-family: sans-serif;
     background-image: url("https://cdn.sanity.io/images/cctd4ker/production/7c82dc04b9b7cd6fdc7050baac63f9a0fa1d0b58-3200x1800.jpg?w=1080&q=75&fit=clip&auto=format");
@@ -5,7 +14,6 @@ body {
     background-attachment: fixed;
     background-size: cover;
     min-height: 100%;
-    max-width: 1000px;
     margin: auto;
 }
 
@@ -15,4 +23,8 @@ body {
     justify-content: space-between;
     gap: 20px;
     background: rgba(0, 0, 0, 0.2);
+}
+
+#headerImg{
+    max-width: 300px;
 }
