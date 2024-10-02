@@ -1,0 +1,16 @@
+body {
+    font-family: sans-serif;
+    background-image: url("https://cdn.sanity.io/images/cctd4ker/production/7c82dc04b9b7cd6fdc7050baac63f9a0fa1d0b58-3200x1800.jpg?w=1080&q=75&fit=clip&auto=format");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    /* min-height: 100%;
+    max-width: 1000px;
+    margin: auto; */
+}
+
+.container {
+    display: flex; 
+    flex-direction: column;
+    background: rgba(0, 0, 0, 0.2);
+}
