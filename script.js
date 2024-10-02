@@ -71,9 +71,16 @@ searchButton.addEventListener(`click`, async ()=> {
                 return axios.get(`https://collectionapi.metmuseum.org/public/collection/v1/objects/${id}`)
             })
             let imageResponses = await Promise.all(imagePromises)
+            let imageCount= 0 //Utilize ChatGPT to help with the image count function in order to move past entries that the API says have an image, but don't actually.
             imageResponses.forEach((imgResponse, index) => {
-                if (imageResponses.data && imageResponses.data.primaryImage){
-                    document.getElementById(`img${index+1}`).setAttribute("src", imgResponse.data.primaryImage)
+                console.log(`Processing response for ID: ${firstSixIDs[index]}`)
+                console.log(imgResponse)
+                if (imgResponse.data && imgResponse.data.primaryImage && imgResponse.data.primaryImage !== ""){
+                    document.getElementById(`img${imageCount+1}`).setAttribute("src", imgResponse.data.primaryImage);
+                    imageCount++
+                    if (imageCount >= 6) return
+                } else {
+                    console.log(`No valid primary image found for ID: ${firstSixIDs[index]}`)
                 }
             })
         })
