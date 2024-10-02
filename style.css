@@ -22,17 +22,18 @@ body {
     align-items: center; 
     justify-content: space-between;
     margin: 20px 0;
-    background: rgba(18, 17, 18, 0.4);
     height: 60px;
     padding: 0 20px;
 }
 
 .container2 {
     display: flex; 
-    flex-wrap: wrap; 
+    align-items: center; 
     justify-content: space-between;
-    gap: 20px;
-    background: rgba(0, 0, 0, 0.2);
+    margin: 20px 0;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 0 20px;
+    flex-wrap: wrap;
 }
 
 #headerImg{
@@ -54,4 +55,24 @@ body {
     background: black;
     color: white;
     padding: 0 20px; 
+}
+
+.display {
+    color: white; 
+    padding: 0 20px; 
+}
+
+.con2_column1 {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+}
+
+
+#imgContainer {
+    display: flex;
+    justify-content: center;
+    max-width: 200px;
+    max-height: 200px;
 }
