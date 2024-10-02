@@ -28,7 +28,6 @@ body {
 
 .container2 {
     display: flex; 
-    flex-direction: column; 
     margin: 20px 0;
     background: rgba(0, 0, 0, 0.7);
     padding: 20px;
@@ -39,8 +38,6 @@ body {
 }
 
 #imgContainer {
-    top: 10px; 
-    left: 10px; 
     max-width: 200px;
     max-height: 200px;
     z-index: 10; //Get this portion from ChatGPT to position the item on top
@@ -65,15 +62,17 @@ body {
 
 .display {
     display: flex; 
-    flex-direction: row;
-    justify-content: space-between;
+    flex-direction: column;
+    flex: 1;
     color: white; 
     padding: 0 20px; 
     box-sizing: border-box; //Got this from ChatGPT, to allow it to count the padding in the dimensions
-    width: 100%;
 }
 
 .con2_column1, .con2_column2 {
     flex: 1;
     padding: 10px;
+    min-width: 0;
+    display: flex; 
+    flex-direction: column;
 }
