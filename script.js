@@ -126,6 +126,21 @@ searchButton.addEventListener(`click`, async () => {
           imgElements[imageCount].style.maxHeight = "200px";
           imgElements[imageCount].style.width = "auto";
           imgElements[imageCount].style.height = "auto";
+          imgElements[imageCount].setAttribute(
+            "data-object-id",
+            imgResponse.data.objectID
+          );
+          console.log(`Setting data-object-id: ${imgResponse.data.objectID}`);
+          (function (index) {
+            //This portion was added as an immediately invoked function expression (IIFE) that ChatGPT gave me, after attempting to troubleshoot a different way.
+            imgElements[imageCount].addEventListener(`click`, () => {
+              const clickedObjectID =
+                imgElements[index].getAttribute("data-object-id");
+              console.log(`Image clicked, Object ID: ${clickedObjectID}`);
+              id.textContent = `Object ID: ${clickedObjectID}`;
+            });
+          })(imageCount);
+
           imageCount++;
         }
       });
