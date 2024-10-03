@@ -14,7 +14,8 @@ const dateCreated = document.querySelector(`#objectDate`)
 const objectMedium = document.querySelector(`#medium`)
 const objectDimensions = document.querySelector(`#dimensions`)
 const source= document.querySelector(`#creditLine`)
-const copyright= document.querySelector(`#rightsAndReproduction`)
+const copyright= document.querySelector
+(`#rightsAndReproduction`)
 const site= document.querySelector(`#linkResource`)
 const objectTags= document.querySelector(`#tags`)
 const objectGalleryNumber = document.querySelector(`#GalleryNumber`)
@@ -29,13 +30,16 @@ const imgElements = [
     document.querySelector(`#img8`),
 ]
 const noResultsMessage = document.querySelector(`h2`)
+const display1 = document.querySelectorAll(`.display1`)
+const con2Column1 = document.querySelector(`.con2_column1`)
+const con2Column2 = document.querySelector(`.con2_column2`)
 
 searchButton.addEventListener(`click`, async ()=> { //For DRY code, may want to separate click event listener from overall function if necessary
     let searchText= textInput.value.trim() //Got this from ChatGPT to clear earlier messages
 
     noResultsMessage.textContent = ``
     imgElements.forEach(img => img.setAttribute("src", "")) //Don't understand what the second part does here.
-    
+    console.log(!isNaN(searchText)) 
     if (!isNaN(searchText) && searchText) {
         try {
     
@@ -61,7 +65,8 @@ searchButton.addEventListener(`click`, async ()=> { //For DRY code, may want to 
         site.textContent = `Site Info: ${objectURL}`
         objectTags.textContent = `Tags: ${tags}`
         objectGalleryNumber.textContent = `Gallery Number: ${GalleryNumber}`
-    } catch (error) {
+       
+    }  catch (error) {
         console.error(`Error fetching object data:`, error); //Not sure what this does, added at suggestion of ChatGPT.
     }
 } else {
@@ -70,7 +75,12 @@ searchButton.addEventListener(`click`, async ()=> { //For DRY code, may want to 
             https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&q=${searchText}`)
         let objectIDs = response.data.objectIDs.slice(0,8)
         // let firstEightIDs= []
-        if (objectIDs && objectIDs.length > 0)    {   //Used ChatGPT to test how to get the if and for lines
+        display1.forEach((display, index) => {
+            display.style.display= "none"
+        })
+        con2Column1.style.display= "none"
+        con2Column2.style.display= "none"
+              //Used ChatGPT to test how to get the if and for lines
         //     for (let i=0; i < Math.min(8, objectIDs.length); i++){ Commenting this out for now--may want to reactive later if this doesn't work.
         //         firstEightIDs.push(objectIDs[i])
         //         console.log(firstEightIDs)
@@ -94,9 +104,9 @@ searchButton.addEventListener(`click`, async ()=> { //For DRY code, may want to 
                     if (imageCount === 0) {
                         noResultsMessage.textContent= "Nothing found with that search criteria."
                     }
-                }
+                
     } catch (error){
         console.error(`Error fetching search results:`, error);
-    } }
-            })
-    
+    } 
+            
+}})
