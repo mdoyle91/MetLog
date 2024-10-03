@@ -50,3 +50,4 @@ Pseudo-coding
 -Create an entry screen
 -Add translation feature
 -Figure out pop-ups for new user navigation
+-'char' function to append IDs to cards with a 'for' loop console.log(target.dataset.char) in order to click on an image with event listener
