@@ -84,7 +84,7 @@ searchButton.addEventListener(`click`, async ()=> { //For DRY code, may want to 
             imageResponses.forEach((imgResponse, index) => {
                 if (imgResponse.data && imgResponse.data.primaryImage){
                     imgElements[imageCount].setAttribute("src", imgResponse.data.primaryImage);
-                    imgElements[imageCount].style.maxWidth = "200px"; //Utilized ChatGPT to get the image heights and widths set as I could not get it to function properly by altering the styling, specifically for .con3_column1.
+                    imgElements[imageCount].style.maxWidth = "200px"; //Utilized ChatGPT to get the image heights and widths set as I could not get it to function properly by altering the styling, specifically for .con3_column1. I actually am the one that suggested to ChatGPT that perhaps an alteration could be made in Javascript, and it just showed me what to do.
                     imgElements[imageCount].style.maxHeight = "200px";
                     imgElements[imageCount].style.width= "auto";
                     imgElements[imageCount].style.height= "auto";

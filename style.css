@@ -87,26 +87,16 @@ body {
 .display2 {
     flex: 1; /*Don't fully understand this--got it from ChatGPT and also used it elsewhere. */
     padding: 10px; 
+    flex-direction: column; 
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     max-width: 200px;
     max-height: 200px;
 }
 
-.con3_column1 {
-    display: flex;
-    flex-direction: column; 
-    align-items: center; 
-    justify-content: center;
-}
 
-.con3_column1 img{
-    width: 200px;
-    height: auto;
-}
-
-.con3_column2 img, .con3_column3 img,.con3_column4 img {
+.con3_column1 img, .con3_column2 img, .con3_column3 img,.con3_column4 img {
     max-width: 200px;
     max-height: 200px;
     width: auto;
