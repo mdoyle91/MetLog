@@ -96,18 +96,11 @@ searchButton.addEventListener(`click`, async () => {
       let response = await axios.get(`
             https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&q=${searchText}`);
       let objectIDs = response.data.objectIDs.slice(0, 8);
-      // let firstEightIDs= []
       display1.forEach((display, index) => {
         display.style.display = "none";
       });
       con2Column1.style.display = "none";
       con2Column2.style.display = "none";
-      //Used ChatGPT to test how to get the if and for lines
-      //     for (let i=0; i < Math.min(8, objectIDs.length); i++){ Commenting this out for now--may want to reactive later if this doesn't work.
-      //         firstEightIDs.push(objectIDs[i])
-      //         console.log(firstEightIDs)
-      //     }
-      // }
       let imagePromises = objectIDs.map((id) => {
         //Used ChatGPT here, which suggested the map and promise.all as I tried a different approach first that didn't work.
         return axios.get(
